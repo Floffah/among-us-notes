@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["D:\\projects\\unfinished\\web\\among-us-notes\\src\\index.ts"],
+  "sourcesContent": ["console.log(\"test gh deploy\");\r\n"],
+  "mappings": "AAAA,QAAQ,IAAI;",
+  "names": []
+}
