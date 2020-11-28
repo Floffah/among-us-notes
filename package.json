@@ -1,0 +1,65 @@
+{
+  "name": "among-us-notes",
+  "version": "0.0.1",
+  "description": "An among us notes site inspired by Kedyn/fusliez-notes by with different tools for hardcore detectives ",
+  "main": "src/index.ts",
+  "repository": "https://github.com/Floffah/among-us-notes",
+  "author": "floffah <therealfloffah@gmail.com>",
+  "license": "GPL-3.0",
+  "private": true,
+  "browserslist": {
+    "production": [
+      "defaults",
+      "not IE 11",
+      "not IE_Mob 11",
+      "maintained node versions",
+      ">0.2%",
+      "not dead"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "scripts": {
+    "dev": "yarn snowpack dev",
+    "build": "yarn snowpack build",
+    "storydev": "yarn start-storybook -p 6006",
+    "story": "yarn build-storybook -o story",
+    "deploy": "yarn snowpack build && git add build && git subtree push --prefix build origin gh-pages && git push"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@mdi/js": "^5.8.55",
+    "@mdi/react": "^1.4.0",
+    "@snowpack/plugin-optimize": "^0.2.9",
+    "@snowpack/plugin-typescript": "^1.1.0",
+    "@snowpack/plugin-webpack": "^2.1.1",
+    "@storybook/addon-a11y": "^6.1.8",
+    "@storybook/addon-actions": "^6.1.8",
+    "@storybook/addon-docs": "^6.1.8",
+    "@storybook/addon-essentials": "^6.1.8",
+    "@storybook/addon-links": "^6.1.8",
+    "@storybook/addon-storysource": "^6.1.8",
+    "@storybook/addons": "^6.1.8",
+    "@storybook/react": "^6.1.8",
+    "@storybook/theming": "^6.1.8",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/styled-components": "^5.1.4",
+    "babel-loader": "^8.2.2",
+    "html-webpack-plugin": "^5.0.0-alpha.14",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-is": "^17.0.1",
+    "snowpack": "^2.17.1",
+    "storybook-mobile": "^0.1.26",
+    "styled-components": "^5.2.1",
+    "themeprovider-storybook": "^1.6.4",
+    "ts-loader": "^8.0.11",
+    "typescript": "^4.1.2",
+    "webpack": "^5.9.0",
+    "webpack-cli": "^4.2.0"
+  }
+}
